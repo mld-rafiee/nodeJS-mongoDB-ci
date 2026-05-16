@@ -10,7 +10,7 @@ env:
   MONGODB_DB_NAME: mongodb
 jobs:
   test:
-    # environment: testing
+    environment: testing
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
       MONGODB_CLUSTER_ADDRESS: "cluster0.39rg914.mongodb.net"
