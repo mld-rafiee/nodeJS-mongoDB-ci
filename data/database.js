@@ -16,7 +16,7 @@ const client = new MongoClient(uri);
 let database;
 
 try {
-  // client = new MongoClient(uri);
+
   console.log('Hang On! Connecting to your DB...');
   await client.connect();
   console.log('Connected to your DB Server');
