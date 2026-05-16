@@ -14,10 +14,8 @@ jobs:
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb
       MONGODB_CLUSTER_ADDRESS: "cluster0.39rg914.mongodb.net"
-      # MONGODB_USERNAME: ${{ secrets.MONGODB_USER }}
-      # MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
-      MONGODB_USERNAME: "db_action"
-      MONGODB_PASSWORD: "zRk05WNyV63R5Gha"
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USER }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
 
       PORT: 8080
     runs-on: ubuntu-latest
