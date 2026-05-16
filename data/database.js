@@ -11,9 +11,9 @@ const dbName = process.env.MONGODB_DB_NAME;
 // const dbName = "mongodb"
 
 //const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
-// const uri = `mongodb://${dbUser}:${dbPassword}@localhost:27017/${dbName}authSource=admin&directConnection=true&serverSelectionTimeoutMS=5000`;
+const uri = `mongodb://${dbUser}:${dbPassword}@localhost:27017/${dbName}authSource=admin&directConnection=true&serverSelectionTimeoutMS=5000`;
 // const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
-const uri = `mongodb+srv://${encodeURIComponent(dbUser)}:${encodeURIComponent(dbPassword)}@${clusterAddress}/?retryWrites=true&w=majority`;
+// const uri = `mongodb+srv://${encodeURIComponent(dbUser)}:${encodeURIComponent(dbPassword)}@${clusterAddress}/?retryWrites=true&w=majority`;
 
 const client = new MongoClient(uri);
 
